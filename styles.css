@@ -293,9 +293,15 @@
   
   .jumbotron--background-image {
       color: #222;
-      min-height: 20vh;
+      height: 100vh;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
       background-position: 50% 100%;
       background-size: cover;
@@ -303,9 +309,16 @@
       background-color: #fff;
       text-align: center;
   }
+
+  .jumbotron--background-image h1 {
+      font-weight: bolder;
+  }
+  
   
   .jumbotron--background-image h3 {
       line-height: 1.4em;
+      font-size: 24px;
+      font-weight: bold;
   }
   
   div[class^="col-"] {
@@ -331,5 +344,6 @@
   }
   
   .align-top {
+      -ms-flex-item-align: start;
       align-self: flex-start;
   }
